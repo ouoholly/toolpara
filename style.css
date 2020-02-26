@@ -1,0 +1,78 @@
+body {
+    text-align: center;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Meiryo, Helvetica, sans-serif;
+    background: #2B2B2B;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 40px;
+    color: #FFFFFF;
+    margin: 20px 55px;
+}
+
+@media only screen and (max-width: 325px) {
+    h1 {
+        font-size: 24px;
+    }
+}
+
+textarea {
+    width: 80%;
+    height: 60vh;
+    line-height: 1.3rem;
+    font-size: 12.5px;
+    padding: 8px 10px;
+    background: #F9F9F9;
+    color: black;
+    border-radius: 5px;
+}
+
+input[type=button] {
+    cursor: pointer;
+    background-color: transparent;
+    color: #F9F9F9;
+    text-align: center;
+    border: 1px solid white;
+    padding: 10px 15px;
+    margin: 3px;
+    font-size: 15px;
+    display: inline-block;
+    box-shadow: inset 0 0 0 0 white;
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    transition: 1.5s;
+}
+
+input[type=button]:hover {
+    box-shadow: inset 300px 0 0 0 white;
+    color: black;
+}
+
+.copybtn {
+    background-color: white !important;
+    color: black !important;
+    transition: .1s !important;
+}
+
+.copybtn:hover {
+    background-color: #ffc621 !important;
+    color: white !important;
+    box-shadow: none !important;
+    border: 1px solid #ffc621;
+}
+
+.copybtn:active{
+    transform: scale(0.96);
+}
+
+footer {
+    margin: 20px auto;
+    color: #F1F1F1;
+    font-size: 10px;
+}
+
+footer a {
+    color: #F1F1F1;
+    text-decoration: none;
+}
