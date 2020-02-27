@@ -2,12 +2,47 @@
 <html>
 
 <head>
+
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="線上小功具：繁簡轉換、段落空行、段落縮進">
+    <meta name="keywords" content="繁簡,簡繁,繁簡轉換,段落空行,段落縮進,線上功具">
 
     <title>
         繁簡轉換、段落空行、段落縮進| ouoholly's Tools
     </title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158263809-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-158263809-1');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NGQ3V89');
+    </script>
+    <!-- End Google Tag Manager -->
 
     <link href="style.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -19,17 +54,23 @@
 
 <body>
 
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NGQ3V89" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <h1>繁簡轉換、段落空行、段落縮進</h1>
 
     <form>
-        <input onclick="convert(1)" type="button" value="繁">
-        <input onclick="convert(0)" type="button" value="簡">
-        <input onclick="delEmptyLine();" type="button" value="刪除空行">
-        <input onclick="addEmptyLine();" type="button" value="段落空行">
-        <input onclick="addParaTab();" type="button" value="新增段落縮進">
-        <input onclick="delParaTab();" type="button" value="刪除段落縮進">
-        <input class="copybtn" type="button" value="複製" onclick="javascript:this.form.box.focus();this.form.box.select();execCommand('Copy')" />
-        
+        <input id="btn-toTrad" onclick="convert(1)" type="button" value="繁">
+        <input id="btn-toSimp" onclick="convert(0)" type="button" value="簡">
+        <input id="btn-delEmptyLine" onclick="delEmptyLine();" type="button" value="刪除空行">
+        <input id="btn-addEmptyLine" onclick="addEmptyLine();" type="button" value="段落空行">
+        <input id="btn-addParaTab" onclick="addParaTab();" type="button" value="新增段落縮進">
+        <input id="btn-delParaTab" onclick="delParaTab();" type="button" value="刪除段落縮進">
+        <input id="btn-copy" type="button" value="複製" onclick="javascript:this.form.box.focus();this.form.box.select();execCommand('Copy')" />
+
         <br/>
         <br/>
         <br/>
@@ -73,7 +114,7 @@
         }
     </style>
 
-<footer>©2020 By <a href="https://github.com/ouoholly/toolpara">ouoholly</a></footer>
+    <footer>©2020 By <a href="https://github.com/ouoholly/toolpara">ouoholly</a></footer>
 
 </body>
 
